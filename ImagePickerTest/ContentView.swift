@@ -11,7 +11,10 @@ import SwiftUI
 struct ContentView: View {
     
     @State var presentedView : Bool = false
+    @State var contactsPicker : Bool = false
+    
     @State var image : Image?
+    
     var body: some View {
         VStack{
             if image == nil{
@@ -28,7 +31,7 @@ struct ContentView: View {
                 .clipShape(Circle())
                 .padding(.bottom)
             }
-            
+            // Choose Profile picture button
             Button(action:{
                 print("Tapped on profile picture button!")
                 self.presentedView.toggle()
@@ -36,6 +39,16 @@ struct ContentView: View {
                 Text("Choose Profile picture")
             }.sheet(isPresented: $presentedView, onDismiss: loadImage) {
                 SDOImagePicker(image: self.$image)
+            }
+            
+            // Choose Contacts Button
+            Button(action: {
+                print("Tapped on Contacts Picker!")
+                self.contactsPicker.toggle()
+            }){
+                Text("Pick from Contacts")
+            }.sheet(isPresented: $contactsPicker, onDismiss: nil) {
+                ContactsPicker()
             }
         }
     }

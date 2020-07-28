@@ -15,6 +15,7 @@
 		3C16C0C924D0521F00111E62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C16C0C824D0521F00111E62 /* Preview Assets.xcassets */; };
 		3C16C0CC24D0521F00111E62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C16C0CA24D0521F00111E62 /* LaunchScreen.storyboard */; };
 		3C16C0D524D0531000111E62 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C16C0D424D0531000111E62 /* ImagePicker.swift */; };
+		3C16C0D724D05BEE00111E62 /* ContactPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C16C0D624D05BEE00111E62 /* ContactPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3C16C0CB24D0521F00111E62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C16C0CD24D0521F00111E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C16C0D424D0531000111E62 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		3C16C0D624D05BEE00111E62 /* ContactPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				3C16C0D424D0531000111E62 /* ImagePicker.swift */,
+				3C16C0D624D05BEE00111E62 /* ContactPicker.swift */,
 			);
 			path = Pickers;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				3C16C0BF24D0521D00111E62 /* SceneDelegate.swift in Sources */,
 				3C16C0D524D0531000111E62 /* ImagePicker.swift in Sources */,
 				3C16C0C424D0521D00111E62 /* ContentView.swift in Sources */,
+				3C16C0D724D05BEE00111E62 /* ContactPicker.swift in Sources */,
 				3C16C0C224D0521D00111E62 /* ImagePickerTest.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
