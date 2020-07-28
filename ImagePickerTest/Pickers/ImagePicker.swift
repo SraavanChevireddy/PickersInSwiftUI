@@ -44,6 +44,7 @@ struct SDOImagePicker : UIViewControllerRepresentable{
     func makeUIViewController(context: Context) -> UIImagePickerController {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = context.coordinator
+        imagePicker.sourceType = .photoLibrary
         return imagePicker
     }
     func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {

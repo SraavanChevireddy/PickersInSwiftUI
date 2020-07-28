@@ -34,6 +34,7 @@ struct ContactsPicker : UIViewControllerRepresentable{
     
     func makeUIViewController(context: Context) -> CNContactPickerViewController {
         let contactsController = CNContactPickerViewController()
+        contactsController.delegate = context.coordinator
         return contactsController
     }
     
